@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h1 class="mb-4">مرحبًا بكم في نظام نتائج الطلاب</h1>
+        <p class="lead mb-5">يمكنك البحث عن نتائج الامتحانات باستخدام رقم الامتحان الخاص بك</p>
+        <a href="{{ url_for('search') }}" class="btn btn-primary btn-lg px-4">
+            <i class="fas fa-search me-2"></i>ابحث عن نتيجتك
+        </a>
+    </div>
+</div>
+{% endblock %}
