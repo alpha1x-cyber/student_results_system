@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6 text-center">
+        <h1 class="display-1 text-danger">404</h1>
+        <h2 class="mb-4">الصفحة غير موجودة</h2>
+        <p class="lead">عذرًا، لم نتمكن من العثور على الصفحة التي تبحث عنها.</p>
+        <a href="{{ url_for('index') }}" class="btn btn-primary">
+            <i class="fas fa-home me-2"></i>العودة إلى الصفحة الرئيسية
+        </a>
+    </div>
+</div>
+{% endblock %}
